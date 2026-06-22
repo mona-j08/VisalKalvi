@@ -44,6 +44,7 @@ body {
   color: var(--text);
   line-height: 1.7;
   overflow-x: hidden;
+  padding-top: 72px; /* Prevent fixed header from covering content */
 }
 
 img { display: block; max-width: 100%; }
@@ -145,11 +146,14 @@ button { cursor: pointer; font-family: inherit; }
    HEADER
    ========================================= */
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background: var(--white);
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 2px 16px rgba(37,99,235,0.07);
-  position: relative;
-  z-index: 100;
+  box-shadow: 0 4px 18px rgba(60, 40, 150, 0.12);
 }
 
 .header-inner {
