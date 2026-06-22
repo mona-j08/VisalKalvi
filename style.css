@@ -148,9 +148,8 @@ button { cursor: pointer; font-family: inherit; }
   background: var(--white);
   border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 16px rgba(37,99,235,0.07);
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  position: relative;
+  z-index: 100;
 }
 
 .header-inner {
