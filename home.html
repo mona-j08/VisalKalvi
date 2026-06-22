@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VisalKalvi — You Grow, World Grows | Career Guidance for Students</title>
+  <meta name="description" content="VisalKalvi empowers students with future-ready career guidance, skill development, and emerging technology awareness. You Grow, World Grows." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <!-- Left: Logo -->
+    <a href="home.html" class="header-logo">
+      <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#2563EB"/>
+            <stop offset="100%" stop-color="#7C3AED"/>
+          </linearGradient>
+        </defs>
+        <!-- Person body -->
+        <circle cx="17" cy="10" r="5" fill="url(#lg1)"/>
+        <path d="M10 28 Q12 20 17 19 Q22 20 24 28 L22 34 L12 34 Z" fill="url(#lg1)"/>
+        <path d="M12 34 L10 44 M22 34 L24 44" stroke="url(#lg1)" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Bow -->
+        <path d="M26 16 Q30 22 26 30" stroke="url(#lg1)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <line x1="26" y1="16" x2="26" y2="30" stroke="url(#lg1)" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <!-- Arrow -->
+        <line x1="24" y1="23" x2="42" y2="19" stroke="url(#lg1)" stroke-width="2" stroke-linecap="round"/>
+        <polygon points="42,19 37,17 38,22" fill="url(#lg1)"/>
+        <!-- Target dot -->
+        <circle cx="45" cy="18" r="2.5" fill="#7C3AED" opacity="0.7"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">VisalKalvi</span>
+        <span class="logo-motto">You Grow, World Grows</span>
+      </div>
+    </a>
+
+    <!-- Center: Nav -->
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="home.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="programs.html" class="nav-link">Programs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Right: CTA -->
+    <div class="header-right">
+      <a href="contact.html" class="header-cta">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Message Us
+      </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="home.html" class="nav-link active">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="programs.html" class="nav-link">Programs</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html" class="header-cta">Message Us</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🎯</span>
+          Future-Ready Career Guidance
+        </div>
+        <h1 class="hero-title">
+          Building <span class="highlight">Confident,</span><br/>
+          <span class="highlight">Future-Ready</span><br/>
+          Students
+        </h1>
+        <p class="hero-desc">
+          VisalKalvi helps students discover their strengths, explore emerging technologies,
+          and confidently choose careers that align with their skills and passions.
+        </p>
+        <div class="hero-actions">
+          <a href="programs.html" class="btn-primary">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Explore Programs
+          </a>
+          <a href="about.html" class="btn-outline">Learn About Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>250+</strong><span>Students Covered</span></div>
+          <div class="hero-stat"><strong>300+</strong><span>Students Trained</span></div>
+          <div class="hero-stat"><strong>75+</strong><span>Guidance Sessions</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-main-card">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <h3>Career Clarity & Direction</h3>
+            <p>We help students identify the right career path based on their unique interests, skills, and future opportunities.</p>
+          </div>
+          <div class="floating-card fc-1">
+            <div class="dot"></div>
+            Future-Ready Skills
+          </div>
+          <div class="floating-card fc-2">
+            <div class="dot"></div>
+            1,00,000 Students Goal
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES STRIP ===== -->
+<section class="features-strip">
+  <div class="container">
+    <div class="features-strip-inner">
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Career Awareness Sessions
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        Emerging Technology Awareness
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        Student Community
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+        Skill Discovery Workshops
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE ===== -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Why Choose <span class="gradient-text">VisalKalvi?</span></h2>
+    <p class="section-subtitle">We're not just a coaching center — we're your career direction partners, helping you build confidence, skills, and a future-ready mindset.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <h3>Career Direction & Clarity</h3>
+        <p>We guide students to discover their true strengths, interests, and the right career path that aligns with the future job market.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"/></svg></div>
+        <h3>Future-Ready Mindset</h3>
+        <p>We introduce students to emerging technologies, digital skills, and professional attitudes that prepare them for tomorrow's world.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div>
+        <h3>Practical Skill Building</h3>
+        <p>Beyond theory — we focus on real-world skills, hands-on learning, and building a portfolio that impresses employers.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+        <h3>Trusted Guidance</h3>
+        <p>Our experienced mentors provide honest, student-centric career guidance built on trust, transparency, and long-term success.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div>
+        <h3>Student-Centric Approach</h3>
+        <p>Every student is unique. We craft personalized guidance sessions to match each learner's individual potential and aspirations.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+        <h3>Community & Network</h3>
+        <p>Join a growing community of ambitious students and alumni who support each other on the journey to career success.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAMS PREVIEW ===== -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Our <span class="gradient-text">Programs</span></h2>
+    <p class="section-subtitle">Carefully designed programs to help students discover, learn, and grow toward meaningful careers.</p>
+    <div class="programs-grid">
+      <div class="program-card">
+        <div class="prog-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div>
+          <h3>Career Awareness</h3>
+          <p>Explore various career paths and understand which ones align with your strengths and interests.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="prog-icon"><svg viewBox="0 0 24 24"><path d="M19.5 2h-15A2.5 2.5 0 0 0 2 4.5v15A2.5 2.5 0 0 0 4.5 22h15a2.5 2.5 0 0 0 2.5-2.5v-15A2.5 2.5 0 0 0 19.5 2zM8 17.5H5.5v-7H8v7zm-1.25-8a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10.25 8H14.5v-3.5c0-1-.02-2.27-1.38-2.27-1.39 0-1.6 1.08-1.6 2.2v3.57H9V10.5h2.4v1.06h.03c.33-.63 1.15-1.3 2.36-1.3 2.52 0 2.99 1.66 2.99 3.82V17.5z"/></svg></div>
+        <div>
+          <h3>Emerging Technologies</h3>
+          <p>Get introduced to AI, robotics, data science, and other technologies shaping the future world.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="prog-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div>
+        <div>
+          <h3>Skill Discovery</h3>
+          <p>Uncover your hidden talents, communication skills, leadership potential, and professional capabilities.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="prog-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+        <div>
+          <h3>Career Guidance</h3>
+          <p>One-on-one sessions helping students build confidence, choose the right path, and plan their future steps.</p>
+        </div>
+      </div>
+    </div>
+    <div class="programs-cta">
+      <a href="programs.html" class="btn-primary">View All Programs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">What <span class="gradient-text">Students Say</span></h2>
+    <p class="section-subtitle">Real stories from students whose careers were shaped with the right direction.</p>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"VisalKalvi helped me understand what I actually want to become. The career guidance session completely changed my perspective. I now have a clear direction!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Aravind Kumar</div>
+            <div class="testi-role">Class 11 Student</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The emerging technology session was eye-opening. I never knew AI and data science could be a career for someone like me. VisalKalvi made it all clear!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">P</div>
+          <div>
+            <div class="testi-name">Priya Devi</div>
+            <div class="testi-role">Class 12 Student</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Best decision I made — attending VisalKalvi's skill discovery workshop. It helped me identify my strengths and boosted my confidence tremendously."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <div class="testi-name">Ravi Shankar</div>
+            <div class="testi-role">College Fresher</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Ready to Build Your Future-Ready Career?</h2>
+      <p>Join hundreds of students who found their direction, confidence, and career path with VisalKalvi.</p>
+      <a href="contact.html" class="btn-white">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Get in Touch Today
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="home.html" class="header-logo" style="text-decoration:none;">
+          <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="flg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient></defs>
+            <circle cx="17" cy="10" r="5" fill="url(#flg)"/>
+            <path d="M10 28 Q12 20 17 19 Q22 20 24 28 L22 34 L12 34 Z" fill="url(#flg)"/>
+            <path d="M12 34 L10 44 M22 34 L24 44" stroke="url(#flg)" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M26 16 Q30 22 26 30" stroke="url(#flg)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <line x1="26" y1="16" x2="26" y2="30" stroke="url(#flg)" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <line x1="24" y1="23" x2="42" y2="19" stroke="url(#flg)" stroke-width="2" stroke-linecap="round"/>
+            <polygon points="42,19 37,17 38,22" fill="url(#flg)"/>
+            <circle cx="45" cy="18" r="2.5" fill="#a78bfa" opacity="0.8"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-name" style="color:#fff;-webkit-text-fill-color:#fff;background:none;">VisalKalvi</span>
+            <span class="logo-motto">You Grow, World Grows</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Empowering students with direction, confidence, and future-ready career skills for a meaningful life.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="#0f1729"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#0f1729" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Programs -->
+      <div>
+        <h4 class="footer-col-title">Programs</h4>
+        <ul class="footer-links">
+          <li><a href="programs.html">Career Awareness</a></li>
+          <li><a href="programs.html">Emerging Technologies</a></li>
+          <li><a href="programs.html">Skill Discovery</a></li>
+          <li><a href="programs.html">Career Guidance</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="footer-col-title">Contact Details</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Vaari Nagar, 1st Street, near Gowmari Complex, Kamayagoundanpatti, Tamil Nadu 625521
+          </li>
+          <li class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +91 7806908543
+          </li>
+          <li class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Visalkalvi@gmail.com
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 VisalKalvi. All Rights Reserved.</span>
+      <span>Designed with ❤️ for student success</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<div class="whatsapp-float">
+  <a href="https://wa.me/917806908543" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+    <span class="wa-tooltip">Chat with VisalKalvi</span>
+  </a>
+</div>
+
+<!-- Mobile menu toggle script (CSS-only fallback using checkbox trick) -->
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mobileNav');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+  });
+</script>
+
+</body>
+</html>

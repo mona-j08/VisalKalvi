@@ -1,0 +1,70 @@
+<!-- ===== SHARED HEADER — header.html ===== -->
+<!-- Loaded dynamically by each page via fetch() in script below -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+
+    <!-- Left: Logo -->
+    <a href="home.html" class="header-logo">
+      <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hdr-lg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#2563EB"/>
+            <stop offset="100%" stop-color="#7C3AED"/>
+          </linearGradient>
+        </defs>
+        <!-- Person head -->
+        <circle cx="17" cy="10" r="5" fill="url(#hdr-lg)"/>
+        <!-- Person body -->
+        <path d="M10 28 Q12 20 17 19 Q22 20 24 28 L22 34 L12 34 Z" fill="url(#hdr-lg)"/>
+        <!-- Person legs -->
+        <path d="M12 34 L10 44 M22 34 L24 44" stroke="url(#hdr-lg)" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Bow curve -->
+        <path d="M26 16 Q30 22 26 30" stroke="url(#hdr-lg)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <!-- Bow string -->
+        <line x1="26" y1="16" x2="26" y2="30" stroke="url(#hdr-lg)" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <!-- Arrow shaft -->
+        <line x1="24" y1="23" x2="42" y2="19" stroke="url(#hdr-lg)" stroke-width="2" stroke-linecap="round"/>
+        <!-- Arrow head -->
+        <polygon points="42,19 37,17 38,22" fill="url(#hdr-lg)"/>
+        <!-- Target dot -->
+        <circle cx="45" cy="18" r="2.5" fill="#7C3AED" opacity="0.7"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">VisalKalvi</span>
+        <span class="logo-motto">You Grow, World Grows</span>
+      </div>
+    </a>
+
+    <!-- Center: Navigation -->
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="home.html"     class="nav-link" data-page="home">Home</a>
+      <a href="about.html"    class="nav-link" data-page="about">About</a>
+      <a href="programs.html" class="nav-link" data-page="programs">Programs</a>
+      <a href="contact.html"  class="nav-link" data-page="contact">Contact</a>
+    </nav>
+
+    <!-- Right: CTA Button -->
+    <div class="header-right">
+      <a href="contact.html" class="header-cta">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="white">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        Message Us
+      </a>
+    </div>
+
+    <!-- Mobile hamburger toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Slide-Down Nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="home.html"     class="nav-link" data-page="home">Home</a>
+    <a href="about.html"    class="nav-link" data-page="about">About</a>
+    <a href="programs.html" class="nav-link" data-page="programs">Programs</a>
+    <a href="contact.html"  class="nav-link" data-page="contact">Contact</a>
+    <a href="contact.html"  class="header-cta" style="margin-top:8px;">Message Us</a>
+  </nav>
+</header>
