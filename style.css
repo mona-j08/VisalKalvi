@@ -283,10 +283,54 @@ button { cursor: pointer; font-family: inherit; }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1.2fr 1.2fr 1.8fr;
+  grid-template-columns: 2.2fr 1fr 1.2fr 1.8fr;
   gap: 40px;
   padding-bottom: 48px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Footer logo image */
+.footer-logo-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 8px rgba(124,58,237,0.35));
+}
+.footer-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Mission / Vision block in footer */
+.footer-mv {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-mv-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.footer-mv-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #60a5fa;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.footer-mv-item p {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.55;
+  margin: 0;
 }
 
 .footer-brand .logo-name { -webkit-text-fill-color: unset; background: none; color: #fff; font-size: 1.4rem; }

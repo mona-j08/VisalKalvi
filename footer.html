@@ -6,31 +6,29 @@
   <div class="container">
     <div class="footer-grid">
 
-      <!-- Section 1: Brand + Tagline + Social -->
+      <!-- Section 1: Brand + Logo Image + Tagline + Social -->
       <div class="footer-brand">
-        <a href="home.html" class="header-logo" style="text-decoration:none;">
-          <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="ftr-lg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#60a5fa"/>
-                <stop offset="100%" stop-color="#a78bfa"/>
-              </linearGradient>
-            </defs>
-            <circle cx="17" cy="10" r="5" fill="url(#ftr-lg)"/>
-            <path d="M10 28 Q12 20 17 19 Q22 20 24 28 L22 34 L12 34 Z" fill="url(#ftr-lg)"/>
-            <path d="M12 34 L10 44 M22 34 L24 44" stroke="url(#ftr-lg)" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M26 16 Q30 22 26 30" stroke="url(#ftr-lg)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <line x1="26" y1="16" x2="26" y2="30" stroke="url(#ftr-lg)" stroke-width="1.5" stroke-dasharray="3,2"/>
-            <line x1="24" y1="23" x2="42" y2="19" stroke="url(#ftr-lg)" stroke-width="2" stroke-linecap="round"/>
-            <polygon points="42,19 37,17 38,22" fill="url(#ftr-lg)"/>
-            <circle cx="45" cy="18" r="2.5" fill="#a78bfa" opacity="0.8"/>
-          </svg>
+        <a href="home.html" class="header-logo footer-logo-link" style="text-decoration:none;">
+          <img src="logo.png" alt="VisalKalvi Logo" class="footer-logo-img" />
           <div class="logo-text">
             <span class="logo-name" style="color:#fff; -webkit-text-fill-color:#fff; background:none;">VisalKalvi</span>
             <span class="logo-motto">You Grow, World Grows</span>
           </div>
         </a>
         <p class="footer-tagline">Empowering students with direction, confidence, and future-ready career skills for a meaningful life.</p>
+
+        <!-- Mission & Vision -->
+        <div class="footer-mv">
+          <div class="footer-mv-item">
+            <span class="footer-mv-label">🎯 Mission</span>
+            <p>We help students understand the future, explore emerging technologies and choose the right career path based on their interests and skills.</p>
+          </div>
+          <div class="footer-mv-item">
+            <span class="footer-mv-label">🌟 Vision</span>
+            <p>To guide and support 1,00,000 students in building meaningful, future-ready careers.</p>
+          </div>
+        </div>
+
         <div class="footer-social">
           <a href="#" class="social-icon" aria-label="Facebook">
             <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -40,6 +38,9 @@
           </a>
           <a href="#" class="social-icon" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://wa.me/917806908543" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
           </a>
         </div>
       </div>
@@ -63,20 +64,27 @@
           <li><a href="programs.html">Emerging Technologies</a></li>
           <li><a href="programs.html">Skill Discovery</a></li>
           <li><a href="programs.html">Career Guidance</a></li>
+          <li><a href="programs.html">Digital Skills</a></li>
+          <li><a href="programs.html">Leadership Training</a></li>
         </ul>
       </div>
 
       <!-- Section 4: Contact Details -->
       <div>
-        <h4 class="footer-col-title">Contact Details</h4>
+        <h4 class="footer-col-title">Contact</h4>
         <ul class="footer-contact-list">
           <li class="footer-contact-item">
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Vaari Nagar, 1st Street, near Gowmari Complex, Kamayagoundanpatti, Tamil Nadu 625521
+            <span>Vaari Nagar, 1st Street, near Gowmari Complex, Kamayagoundanpatti, Theni, Tamil Nadu 625521</span>
           </li>
           <li class="footer-contact-item">
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            <a href="tel:+917806908543" style="color:inherit;">+91 7806908543</a>
+            <a href="tel:+917806908543" style="color:inherit;">+91 78069 08543</a>
+          </li>
+          <li class="footer-contact-item">
+            <!-- WhatsApp icon in contact -->
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            <a href="https://wa.me/917806908543" target="_blank" rel="noopener" style="color:inherit;">+91 78069 08543 (WhatsApp)</a>
           </li>
           <li class="footer-contact-item">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
