@@ -87,7 +87,8 @@
 }
 
 .ceo-story-tag {
-  display: inline-block;
+  display: block;
+  text-align: center;
   background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(124,58,237,0.1));
   color: var(--purple);
   padding: 5px 16px;
@@ -96,6 +97,9 @@
   font-weight: 700;
   margin-bottom: 20px;
   border: 1px solid rgba(124,58,237,0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ceo-story-text p {
@@ -277,3 +281,4 @@
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: 1fr 1fr; }
 }
+
