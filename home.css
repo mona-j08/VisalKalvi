@@ -277,14 +277,18 @@
 }
 
 .program-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  display: block;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 16px rgba(99,102,241,0.25), 0 12px 32px rgba(37,99,235,0.1);
+  border-color: rgba(99,102,241,0.3);
 }
 
 .prog-icon {
@@ -522,3 +526,4 @@
 @media (max-width: 420px) {
   .impact-grid { grid-template-columns: 1fr 1fr; }
 }
+
