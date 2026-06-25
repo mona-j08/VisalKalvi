@@ -22,10 +22,28 @@
 .program-showcase {
   width: 100%;
   max-width: 680px;
-  min-height: 240px;
+  min-height: 120px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+}
+
+/* Text-only animated program name in 'Currently Featuring' */
+.showcase-name-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  line-height: 1.2;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin: 0;
+  padding: 0 16px;
 }
 
 .showcase-card {
@@ -128,10 +146,7 @@
   position: relative;
 }
 .prog-card-header svg {
-  width: 32px;
-  height: 32px;
-  fill: rgba(255,255,255,0.9);
-  margin-bottom: 12px;
+  display: none;
 }
 .prog-card-header h3 {
   font-family: 'Montserrat', sans-serif;
@@ -314,3 +329,4 @@
   .showcase-card { padding: 28px 20px; }
   .prog-cta-banner { padding: 36px 20px; }
 }
+
