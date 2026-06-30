@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
 </head>
 <body>
 
@@ -279,50 +279,7 @@
 <!-- Placeholder for Shared Footer -->
 <div id="footer-placeholder"></div>
 
-<script>
-  function loadComponent(id, file, callback) {
-    fetch(file)
-      .then(r => r.text())
-      .then(data => {
-        document.getElementById(id).innerHTML = data;
-        if (callback) callback();
-      })
-      .catch(err => console.error('Error loading ' + file + ':', err));
-  }
-
-  loadComponent('header-placeholder', 'header.html', function() {
-    const currentPage = 'about.html';
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === currentPage);
-    });
-    const toggle = document.getElementById('menuToggle');
-    const nav = document.getElementById('mobileNav');
-    if (toggle && nav) {
-      toggle.addEventListener('click', () => {
-        nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
-      });
-    }
-  });
-
-  loadComponent('footer-placeholder', 'footer.html');
-
-  // Connection Box rotating text
-  const phrases = ['Future Ready Career', 'Build Future Together'];
-  let idx = 0;
-  const rotEl = document.getElementById('rotatingTextAbout');
-  if (rotEl) {
-    setInterval(() => {
-      rotEl.style.opacity = '0';
-      rotEl.style.transform = 'translateY(10px)';
-      setTimeout(() => {
-        idx = (idx + 1) % phrases.length;
-        rotEl.textContent = phrases[idx];
-        rotEl.style.opacity = '1';
-        rotEl.style.transform = 'translateY(0)';
-      }, 400);
-    }, 3000);
-  }
-</script>
+<script src="js/script.js"></script>
+<script src="js/animation.js"></script>
 </body>
 </html>

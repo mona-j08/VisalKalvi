@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
 
@@ -280,56 +280,8 @@
 <!-- Placeholder for Shared Footer -->
 <div id="footer-placeholder"></div>
 
-<script>
-  // Shared header/footer loader
-  function loadComponent(id, file, callback) {
-    fetch(file)
-      .then(r => r.text())
-      .then(data => {
-        document.getElementById(id).innerHTML = data;
-        if (callback) callback();
-      })
-      .catch(err => console.error('Error loading ' + file + ':', err));
-  }
-
-  loadComponent('header-placeholder', 'header.html', function() {
-    // Highlight active nav link
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const pageName = currentPage === 'index.html' || currentPage === '' ? 'index.html' : currentPage;
-    document.querySelectorAll('.nav-link').forEach(link => {
-      const href = link.getAttribute('href');
-      link.classList.toggle('active', href === pageName || (pageName === 'index.html' && href === 'index.html'));
-    });
-    // Mobile menu toggle
-    const toggle = document.getElementById('menuToggle');
-    const nav = document.getElementById('mobileNav');
-    if (toggle && nav) {
-      toggle.addEventListener('click', () => {
-        nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
-      });
-    }
-  });
-
-  loadComponent('footer-placeholder', 'footer.html');
-
-  // Connection Box rotating text
-  const phrases = ['Future Ready Career', 'Build Future Together'];
-  let phraseIndex = 0;
-  const rotEl = document.getElementById('rotatingText');
-  if (rotEl) {
-    setInterval(() => {
-      rotEl.style.opacity = '0';
-      rotEl.style.transform = 'translateY(10px)';
-      setTimeout(() => {
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        rotEl.textContent = phrases[phraseIndex];
-        rotEl.style.opacity = '1';
-        rotEl.style.transform = 'translateY(0)';
-      }, 400);
-    }, 3000);
-  }
-</script>
+<script src="js/script.js"></script>
+<script src="js/animation.js"></script>
 
 </body>
 </html>

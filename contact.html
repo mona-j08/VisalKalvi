@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Supabase JS Library CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact VisalKalvi — Get in Touch &amp; Student Enquiry</title>
@@ -8,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="about.css" />
-  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/contact.css" />
 </head>
 <body>
 
@@ -197,6 +199,72 @@
   });
 
   loadComponent('footer-placeholder', 'footer.html');
+</script>
+
+<!-- Supabase Form Submission Script -->
+<script>
+  // Initialize Supabase Client
+  // TODO: Replace 'YOUR_SUPABASE_PROJECT_URL' and 'YOUR_SUPABASE_ANON_KEY' with your actual Supabase credentials
+  const supabaseUrl = 'YOUR_SUPABASE_PROJECT_URL';
+  const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
+  
+  // Safe check for the global export name of the CDN
+  const supabaseLib = (typeof supabase !== 'undefined') ? supabase : supabasejs;
+  const supabaseClient = supabaseLib.createClient(supabaseUrl, supabaseKey);
+
+  const form = document.getElementById('enquiryForm');
+  const submitBtn = document.getElementById('submitBtn');
+
+  if (form && submitBtn) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); // Prevent standard page reload
+
+      // Validate form fields
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Disable button while submitting to prevent double submission
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+
+      // Gather form values
+      const studentName = document.getElementById('studentName').value;
+      const studentClass = document.getElementById('studentClass').value;
+      const schoolName = document.getElementById('schoolName').value;
+      const phoneNumber = document.getElementById('phoneNumber').value;
+      const emailAddress = document.getElementById('emailAddress').value;
+      const message = document.getElementById('message').value;
+
+      try {
+        // Insert row into your contact_enquiries table in Supabase
+        const { data, error } = await supabaseClient
+          .from('contact_enquiries')
+          .insert([
+            {
+              student_name: studentName,
+              student_class: studentClass,
+              school_name: schoolName,
+              phone_number: phoneNumber,
+              email_address: emailAddress || null,
+              message: message
+            }
+          ]);
+
+        if (error) throw error;
+
+        alert('Thank you! Your enquiry has been submitted successfully.');
+        form.reset();
+      } catch (err) {
+        console.error('Error submitting form:', err);
+        alert('Oops! Something went wrong. Please try again later.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit Enquiry';
+      }
+    });
+  }
 </script>
 </body>
 </html>
